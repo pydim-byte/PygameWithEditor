@@ -1,0 +1,171 @@
+{
+    "tileset_name": "assets/tilemap/tileset",
+    "tiles": {
+        "tile_0": {
+            "pos_x": 32,
+            "pos_y": 12,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                }
+            }
+        },
+        "tile_1": {
+            "pos_x": 28,
+            "pos_y": 16,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                },
+                "layer_3": {
+                    "pos_x": 28,
+                    "pos_y": 0
+                }
+            }
+        },
+        "tile_2": {
+            "pos_x": 32,
+            "pos_y": 16,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_2": {
+                    "pos_x": 4,
+                    "pos_y": 8
+                }
+            }
+        },
+        "tile_3": {
+            "pos_x": 36,
+            "pos_y": 16,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                },
+                "layer_3": {
+                    "pos_x": 32,
+                    "pos_y": 0
+                }
+            }
+        },
+        "tile_4": {
+            "pos_x": 24,
+            "pos_y": 20,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                }
+            }
+        },
+        "tile_5": {
+            "pos_x": 28,
+            "pos_y": 20,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_2": {
+                    "pos_x": 4,
+                    "pos_y": 8
+                }
+            }
+        },
+        "tile_6": {
+            "pos_x": 32,
+            "pos_y": 20,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_2": {
+                    "pos_x": 4,
+                    "pos_y": 8
+                }
+            }
+        },
+        "tile_7": {
+            "pos_x": 36,
+            "pos_y": 20,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_2": {
+                    "pos_x": 4,
+                    "pos_y": 8
+                }
+            }
+        },
+        "tile_8": {
+            "pos_x": 40,
+            "pos_y": 20,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                }
+            }
+        },
+        "tile_9": {
+            "pos_x": 28,
+            "pos_y": 24,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                },
+                "layer_3": {
+                    "pos_x": 28,
+                    "pos_y": 4
+                }
+            }
+        },
+        "tile_10": {
+            "pos_x": 32,
+            "pos_y": 24,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_2": {
+                    "pos_x": 4,
+                    "pos_y": 8
+                }
+            }
+        },
+        "tile_11": {
+            "pos_x": 36,
+            "pos_y": 24,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                },
+                "layer_3": {
+                    "pos_x": 32,
+                    "pos_y": 4
+                }
+            }
+        },
+        "tile_12": {
+            "pos_x": 32,
+            "pos_y": 28,
+            "top_layer": 3,
+            "layers_data": {
+                "layer_1": {
+                    "pos_x": 4,
+                    "pos_y": 0
+                }
+            }
+        }
+    },
+    "objects": {
+        "object_0": {
+            "color": "200,0,0",
+            "rect": "4,20,1,1",
+            "type": "player"
+        }
+    }
+}
