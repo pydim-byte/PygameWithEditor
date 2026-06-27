@@ -9,11 +9,7 @@ class SetupMenu():
     def __init__(self):
         self.input_boxes, self.result_text = get_ui()
 
-<<<<<<< HEAD
     def hanlde_inputs(self, inputs : pygame.event.Event) -> None:
-=======
-    def hanlde_inputs(self, inputs : pygame.event) -> None:
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
         if inputs.type == pygame.KEYDOWN:
             if inputs.key == pygame.K_SPACE:
                 launch_editor(self.input_boxes)
