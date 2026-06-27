@@ -3,7 +3,6 @@ from typing import TYPE_CHECKING, Tuple, Dict
 if TYPE_CHECKING:
     from editor_modules.menus.editor_menu import EditorMenu
 import pygame
-<<<<<<< HEAD
 from editor_modules.editor_classes.tileset.tileset_chunk import TilesetChunk
 from editor_modules.editor_classes.tilegrid.tile import Tile
 from editor_modules.namings import MenuName
@@ -11,18 +10,10 @@ from editor_modules.editor_classes.ui_elements.size_buttons import BaseButton
 from editor_modules.editor_classes.layer_menu_classes.layer_box import LayerBox
 from editor_modules.editor_classes.objects_menu_classes.property_box import PropertyBox
 from editor_modules.editor_classes.ui_elements.input_field import InputField
-=======
-from editor_modules.namings import MenuName
-from editor_modules.editor_classes.size_buttons import BaseButton
-from editor_modules.editor_classes.layer_box import LayerBox
-from editor_modules.editor_classes.propery_box import PropertyBox
-from editor_modules.editor_classes.input_field import InputField
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
 
 
 def get_active_rect(mouse_pos, editor : EditorMenu) -> None:
     if mouse_pos[0] < editor.tilegrid_menu.rect.right:
-<<<<<<< HEAD
         editor.active_menu = editor.tilegrid_menu
     else:
         editor.active_menu = editor.tileset_menu
@@ -41,15 +32,6 @@ def get_active_rect(mouse_pos, editor : EditorMenu) -> None:
         rects.extend(editor.objects_menu.boxes[0].buttons)
         for b in editor.objects_menu.boxes[0].boxes:
             if b.valid: rects.append(b)
-=======
-        editor.active_menu = MenuName.TILEGRID
-    else:
-        editor.active_menu = MenuName.TILESET
-
-    rects = editor.tileset_menu.buttons + editor.layer_menu.buttons + editor.objects_menu.buttons + editor.tilegrid_menu.buttons + list(editor.tileset_menu.viable_tiles_rects) + list(editor.tilegrid_menu.viable_tiles_rects) + editor.layer_menu.viable_layer_boxes
-    rects.extend(editor.objects_menu.viable_objects_box.buttons)
-    rects.extend(editor.objects_menu.viable_objects_box.properties_boxes)
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
     rects.append(editor.tileset_menu.input_field)
     rects.append(editor.tilegrid_menu.input_field)
     for r in rects:

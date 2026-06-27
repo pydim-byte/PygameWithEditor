@@ -1,8 +1,5 @@
-<<<<<<< HEAD:editor_modules/editor_classes/tilegrid/tile.py
 from __future__ import annotations
 from typing import TYPE_CHECKING, Tuple, Dict
-=======
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9:editor_modules/editor_classes/tile.py
 import pygame
 from editor_modules.globals import TilemapData, EditorData
 
@@ -41,14 +38,7 @@ class Tile():
             images = list(self.images.items())
             images = sorted(images, key=lambda x:x[0])
             images = [i for i in images if i[0]<=self.top_layer]
-<<<<<<< HEAD:editor_modules/editor_classes/tilegrid/tile.py
             for image_ref in images:
                 refs_to_images.append((image_ref[1][0], image_ref[1][1]))
         return refs_to_images
-=======
-            for image in images:
-                tmp_image = EditorData.TILESET_IMAGE.subsurface(image[1][0], image[1][1], TilemapData.TILES_WIDTH, TilemapData.TILES_HEIGHT)
-                img.blit(pygame.transform.scale(tmp_image, (self.rect.width, self.rect.height)), (0,0))
-        return img
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9:editor_modules/editor_classes/tile.py
            

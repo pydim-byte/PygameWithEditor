@@ -1,14 +1,16 @@
-from typing import TYPE_CHECKING, Union
+from __future__ import annotations
+from typing import TYPE_CHECKING, Tuple, Union
 if TYPE_CHECKING:
-    from editor_modules.editor_classes.propery_box import PropertyBox
-    from editor_modules.editor_classes.input_field import InputField
+    from editor_modules.editor_classes.objects_menu_classes.property_box import PropertyBox
+    from editor_modules.editor_classes.ui_elements.input_field import InputField
 import pygame, os, json
 from editor_modules.globals import EditorData
-from editor_modules.namings import MenuName
-from editor_modules.editor_classes.tilegrid_menu import TilegridMenu
-from editor_modules.editor_classes.tileset_menu import TilesetMenu
-from editor_modules.editor_classes.layer_menu import LayerMenu
-from editor_modules.editor_classes.objects_menu import ObjectsMenu
+from editor_modules.editor_classes.tilegrid.tilegrid_menu import TilegridMenu
+from editor_modules.editor_classes.tileset.tileset_menu import TilesetMenu
+from editor_modules.editor_classes.layer_menu_classes.layer_menu import LayerMenu
+from editor_modules.editor_classes.objects_menu_classes.objects_menu import ObjectsMenu
+from editor_modules.editor_functions.tilemap_saver import TilemapSaver
+from editor_modules.editor_functions.tilemap_loader import TilemapLoader
 from editor_modules.editor_functions.get_active_rect import get_active_rect
 from editor_modules.editor_functions.get_tileset import get_tileset
 from editor_modules.editor_functions.visualize_property import visualize_property

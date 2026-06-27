@@ -1,9 +1,5 @@
 from __future__ import annotations
-<<<<<<< HEAD
 from typing import TYPE_CHECKING, Dict
-=======
-from typing import TYPE_CHECKING
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
 import pygame, sys
 from game_modules.globals import GameScreen, GameUpdate, PlayerStats
 from game_modules.tilemap import Tilemap
@@ -23,22 +19,14 @@ class Game:
         self.physic_manager = PhysicManager(self.tilemap)
         self.player_controller = PlayerController(self.tilemap.player.sprite)
 
-<<<<<<< HEAD
     def handle_events(self, event : pygame.event.Event) -> None:
-=======
-    def handle_events(self, event : pygame.event) -> None:
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
         if event.type in [pygame.KEYUP, pygame.KEYDOWN]:
             self.handle_key_events(event) 
 
-<<<<<<< HEAD
     def handle_key_events(self, event : pygame.event.Event) -> None:
-=======
-    def handle_key_events(self, event : pygame.event) -> None:
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
         if event.type == pygame.KEYDOWN:
             for inpput_key in self.inputs:
                 if event.key == inpput_key:

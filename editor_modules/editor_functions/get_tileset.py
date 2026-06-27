@@ -1,11 +1,7 @@
 from __future__ import annotations
 import pygame
 from editor_modules.globals import TilemapData, EditorData
-<<<<<<< HEAD
 from editor_modules.editor_classes.tileset.tileset_chunk import TilesetChunk
-=======
-from editor_modules.editor_classes.tileset_chunk import TilesetChunk
->>>>>>> f2364a09e958a98a14037439d03a7513214d2db9
 
 
 
